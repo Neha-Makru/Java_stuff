@@ -20,10 +20,10 @@ public class Main {
             }
 
             if (arr[mid] < target) {
-                low += 1;
+                low = mid + 1;
             }
             if (arr[mid] > target) {
-                high -= 1;
+                high = mid - 1;
             }
         }
         if (!found) System.out.println("Element is not present in the array.");
