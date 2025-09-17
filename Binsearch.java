@@ -12,7 +12,7 @@ public class Main {
         int low = 0, high = arr.length - 1, idx = 0;
         boolean found = false;
         while (low <= high) {
-            int mid = (high + low) / 2;
+            int mid = low + (high - low) / 2;
             if (arr[mid] == target) {
                 found = true;
                 idx = mid;
