@@ -20,6 +20,6 @@ public class Main {
             }
             else end = mid -1;
         }
-        return arr[end];
+        return end;
     }
 }
